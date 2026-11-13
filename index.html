@@ -12,6 +12,26 @@
     href="favicon.ico">
   </head>
   <body>
+    <h2>HSWFC Landing Page</h2>
+    <p style="width:500px">
+    Hierarchical Semantic WFC (HSWFC) is an extension of the <a href="https://github.com/mxgmn/WaveFunctionCollapse">Wave Function Collapse (WFC)</a> (also known as <a href="https://paulmerrell.org/model-synthesis/">Model Synthesis</a>) algorithm, an algorithm that can be used for constrained auto-tiling and procedural generation of environments.
+    WFC works by taking some tiles, some adjacency constraints between them, and an empty grid as input, and then produces a filled grid as output with a guarantee that the input constraints are respected everywhere on the grid.
+    What HSWFC attempts to do, is to add (vertical) granularity to the level of detail of a tile, rather than just (horizontal) variation of tiles that WFC allows for by adding new tiles. 
+    Instead of just having cells that are either empty or collapsed, HSWFC allows defining partially collapsed states as special tiles, that are called "meta-tiles". 
+    These tiles are related to one another via a DAG with a single root, to establish a kind of semantic relationship between the meta-tiles. This overall structure is called a meta-tree.
+      </p>
+    <p style="width:500px">
+      HSWFC is intended to be used for human editing, rather than just automated generation. In fact, the idea was specifically to marry human editing with automated generation.
+      The meta-tiles make it much easier for users to place tiles, without having to consider exactly what constraints need to be respected, because they are less detailed and thus have more options to collapse into.
+      Users also get to control the distribution of (meta-)tiles that a meta-tile can collapse into.
+    </p>
+
+    <p>Feel free to play around with the <a href="https://archer6621.github.io/hswfc-editor-b/#/"
+          >demo</a
+        >. Below are some more resources and versions.</p>
+
+    <p style="width:500px">The algorithm is currently (as of Q4 2026) being upgraded and refined in order to make the hierarchical structure more meaningful, by actually considering the paths that are traversed through the meta-tree in constraint resolution.
+    This allows several very interesting possibilities, such as constraint overriding for the same tile to behave differently depending on the meta-tile (essentially make a meta-tile act like a context), and also meaningful meta-tile adjacencies. Updates will follow soon (tm).</p>
     <h2>Please choose a version of the (HS)WFC Editor to check out:</h2>
     <li>
       <ul>
