@@ -14,8 +14,8 @@
   <body>
     <h2>HSWFC Landing Page</h2>
     <p style="width:700px">
-    Hierarchical Semantic WFC (HSWFC) is an extension of the <a href="https://github.com/mxgmn/WaveFunctionCollapse">Wave Function Collapse (WFC)</a> (also known as <a href="https://paulmerrell.org/model-synthesis/">Model Synthesis</a>) algorithm, an algorithm that can be used for constrained auto-tiling and procedural generation of environments.
-    WFC works by taking some tiles, some adjacency constraints between them, and an empty grid as input, and then produces a filled grid as output with a guarantee that the input constraints are respected everywhere on the grid.
+    Hierarchical Semantic WFC (HSWFC) is an extension of <a href="https://github.com/mxgmn/WaveFunctionCollapse">Wave Function Collapse (WFC)</a> (also known as <a href="https://paulmerrell.org/model-synthesis/">Model Synthesis</a>), an algorithm that can be used for constrained auto-tiling and procedural generation of environments.
+    WFC works by taking some tiles, some adjacency constraints between them, and an empty grid as input, and then either produces a filled grid as output with a guarantee that the input constraints are respected everywhere on the grid, or it fails in case of a contradiction.
     What HSWFC attempts to do, is to add (vertical) granularity to the level of detail of a tile, rather than just (horizontal) variation of tiles that WFC allows for by adding new tiles. 
     Instead of just having cells that are either empty or collapsed, HSWFC allows defining partially collapsed states as special tiles, that are called "meta-tiles". 
     These tiles are related to one another via a DAG with a single root, to establish a kind of semantic "consists-of" relationship among the (meta-)tiles, called a meta-tree.
