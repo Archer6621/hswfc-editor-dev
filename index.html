@@ -21,10 +21,15 @@
     These tiles are related to one another via a DAG with a single root, to establish a kind of semantic relationship between the meta-tiles. This overall structure is called a meta-tree.
       </p>
     <p style="width:500px">
-      HSWFC is intended to be used for human editing, rather than just automated generation. In fact, the idea was specifically to marry human editing with automated generation.
+      HSWFC is intended to be used for human editing, rather than just automated generation. In fact, the idea was specifically to marry human editing with automated generation, a practice known as mixed-initiative editing.
+      The demo that is linked below this paragraph is specifically built around this paradigm, and allows the user to edit even simultaneously while the editor is generating.
       The meta-tiles make it much easier for users to place tiles, without having to consider exactly what constraints need to be respected, because they are less detailed and thus have more options to collapse into.
-      Users also get to control the distribution of (meta-)tiles that a meta-tile can collapse into.
+      To give a practical example: road tiles can have many variations of corners, straight pieces, T-junctions; it is terribly inconvenient to have to consider this before placing a road... But if you have a "<text style="font-variant: small-caps">road</text>" meta-tile that can potentially become any of these tiles, then you no longer need to consider what tile to exactly place, nor do you need to make it fit with what is on the grid already.
+      A very interesting side-effect of this that is worth exploring further, is that you can influence the shape of what will be generated through the placement of these meta-tiles. For roads, this is slightly less exciting, but for a building it could mean that its outer walls follow the shape you have drawn.
+      As a bonus, users also get to control the distribution of (meta-)tiles that a meta-tile can collapse into, e.g. you can increase or reduce the ratio of trees and grass in a "<text style="font-variant: small-caps">forest</text>" meta-tile.
     </p>
+
+    <p>In a nutshell: HSWFC attempts to meet the world designer at the detail level they wish to think and draw at, no more and no less.</p>
 
     <p>Feel free to play around with the <a href="https://archer6621.github.io/hswfc-editor-b/#/"
           >demo</a
